@@ -8,6 +8,8 @@ This repo is a collection of personal [Agent Skills](https://agentskills.io/) fo
 
 ## Skill structure
 
+All skills in this repo must conform to the Agent Skills specification at https://agentskills.io/specification.
+
 Every skill lives in its own directory containing a `SKILL.md` with YAML frontmatter:
 
 - `name` — must match the directory name
