@@ -37,6 +37,6 @@ Only load the reference file for the path you are actually taking.
 
 ## 3. Ongoing Updates
 
-Throughout the rest of this conversation, whenever new understanding is gained — through code investigation, test results, user discussion, or implementation decisions — update the analysis file to reflect the current state. The file should always represent the most complete and accurate picture of the issue.
+Throughout the rest of this conversation, whenever new understanding is gained — through code investigation, test results, implementation decisions, or **dialog with the user** (facts they share, clarifications they request, constraints, decisions, references) — update the analysis file to reflect the current state. The file should always represent the most complete and accurate picture of the issue.
 
 Any files relevant to the issue can be placed in the issue directory alongside the analysis — including but not limited to test scripts, example data, reproduction cases, diagrams, reference material, and any other supporting material. Both the AI agent and the human user may add files to this directory at any time during the investigation.
