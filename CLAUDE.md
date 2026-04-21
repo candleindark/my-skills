@@ -19,6 +19,8 @@ Every skill lives in its own directory containing a `SKILL.md` with YAML frontma
 
 The body of `SKILL.md` is the prompt Claude executes. User arguments from slash-command invocation are substituted as `$ARGUMENTS`.
 
+To take advantage of the specification's [progressive disclosure](https://agentskills.io/specification#progressive-disclosure) model, keep `SKILL.md` itself small and move path-specific or lengthy instructions into `references/<name>.md` files within the skill directory. Reference them from `SKILL.md` with relative links (e.g., `references/resume.md`) so they're only loaded when actually needed. Keep references one level deep.
+
 ## Installation model
 
 Skills are made available to Claude Code by symlinking each skill directory into `~/.claude/skills/`:
