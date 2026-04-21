@@ -22,13 +22,13 @@ Fetch the current issue state including new comments, label/assignee/status chan
 
 ## 4. Update the Analysis
 
-Update `issue-<number>-analysis.md` to reflect:
+Append a dated entry to the **Session Log** section of `issue-<number>-analysis.md` covering:
 
-- Date of this resume session
 - New information from the issue (new comments, status changes, linked PRs)
 - Current git state (branch, relevant recent commits, WIP changes)
-- Revised understanding of the problem or fix approach, if applicable
 - Updated next steps
+
+Also revise the earlier sections (Problem Description, Code Investigation, Proposed Fix Approach, Open Questions) in place if the understanding of the issue or fix has changed — the body of the document should always represent the current best understanding, while the Session Log preserves the chronology.
 
 ## 5. Brief the User
 

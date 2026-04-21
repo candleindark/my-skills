@@ -25,11 +25,4 @@ Before writing the analysis, actively investigate:
 
 ## 4. Create the Analysis File
 
-Create `issue-<number>-analysis.md` in the issue directory with these sections:
-
-- **Issue Summary**: Title, URL, author, labels, assignees, current state, date of analysis
-- **Problem Description**: What the issue reports, including error output and reproduction steps from the issue body and comments
-- **Additional Context**: Explanation of why the problem occurs and what the expected behavior should be
-- **Code Investigation**: Relevant files and functions with paths and line numbers; explanation of current behavior and why it causes the problem
-- **Proposed Fix Approach**: High-level description of how to address the issue
-- **Open Questions**: Anything unclear that needs further investigation or discussion
+Copy [`assets/analysis-template.md`](../assets/analysis-template.md) to `issue-<number>-analysis.md` in the issue directory, then fill in each section based on the issue content and your investigation. Leave the **Session Log** section empty — it is populated on subsequent resume sessions.
