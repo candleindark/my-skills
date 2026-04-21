@@ -27,13 +27,13 @@ Skills are made available to Claude Code by symlinking each skill directory into
 ln -s /absolute/path/to/my-skills/<skill-name> ~/.claude/skills/<skill-name>
 ```
 
-This means the directory name is the skill name users will invoke (`/issue-analyze`, `/issue-resume`, etc.). Keep directory names, the `name:` frontmatter field, and any cross-references in `README.md` consistent when renaming.
+This means the directory name is the skill name users will invoke (`/issue-analyze`, etc.). Keep directory names, the `name:` frontmatter field, and any cross-references in `README.md` consistent when renaming.
 
 ## Conventions used across skills
 
 - **Issue directory layout**: skills that work with forge issues write to `.issues/<hub>/<repo>/<number>/` in the *consumer* project's root (not in this repo). GitHub uses `<org>` as the hub; non-GitHub forges use the full hostname to avoid collisions. Any new issue-related skill should follow this same layout so directories are shared across skills.
 - **Forge-agnostic design**: skills branch on forge (`gh` for GitHub, `glab` for GitLab, direct URL/API fetch otherwise) rather than hardcoding GitHub.
-- **Living analysis files**: `issue-analyze` creates `issue-<number>-analysis.md` and `issue-resume` updates it; both skills explicitly instruct the model to keep updating the file throughout the conversation rather than treating it as a one-shot artifact.
+- **Living analysis files**: `issue-analyze` creates `issue-<number>-analysis.md` on first invocation and updates it on subsequent invocations for the same issue; the skill explicitly instructs the model to keep updating the file throughout the conversation rather than treating it as a one-shot artifact.
 
 ## When adding a new skill
 
