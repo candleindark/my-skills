@@ -1,0 +1,45 @@
+# PR <NUMBER>: <TITLE>
+
+## PR Summary
+
+- **Title**:
+- **URL**:
+- **Author**:
+- **Base → Head**:
+- **Labels**:
+- **Reviewers**:
+- **State**:
+- **CI Status**:
+- **Linked Issues**:
+- **Date of analysis**:
+
+## Summary of Changes
+
+<!-- What this PR does at a high level. Pull from the PR description and the actual diff. -->
+
+## Review Findings
+
+<!--
+Findings surfaced by the built-in /review skill and any additional investigation.
+Group by severity where useful (blocking, suggestions, nits) and reference files
+with paths and line numbers (e.g., src/foo.py:42).
+-->
+
+## Recommendation
+
+<!-- Approve, request changes, or comment — and the rationale. -->
+
+## Open Questions
+
+<!-- Anything unclear that needs further investigation, clarification from the author, or discussion. -->
+
+## Session Log
+
+<!--
+Append a dated entry each time work resumes on this PR. Each entry should note:
+- new information from the PR (new commits, new comments, CI/status changes, linked issues)
+- findings from any re-run of /review
+- current git state (branch, relevant recent commits, WIP changes)
+- revised understanding or recommendation, if applicable
+- updated next steps
+-->
