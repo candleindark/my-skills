@@ -1,0 +1,30 @@
+{
+  "cli_version": "0.5.5",
+  "checkpoint_id": "9404f3d3636a",
+  "strategy": "manual-commit",
+  "branch": "add-pr-analyze-skill",
+  "checkpoints_count": 3,
+  "files_touched": [
+    "CLAUDE.md",
+    "README.md",
+    "pr-analyze/SKILL.md",
+    "pr-analyze/assets/analysis-template.md",
+    "pr-analyze/references/fresh-analysis.md",
+    "pr-analyze/references/resume.md"
+  ],
+  "sessions": [
+    {
+      "metadata": "/94/04f3d3636a/0/metadata.json",
+      "transcript": "/94/04f3d3636a/0/full.jsonl",
+      "content_hash": "/94/04f3d3636a/0/content_hash.txt",
+      "prompt": "/94/04f3d3636a/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 45,
+    "cache_creation_tokens": 44060,
+    "cache_read_tokens": 627076,
+    "output_tokens": 8565,
+    "api_call_count": 20
+  }
+}

@@ -1,0 +1,21 @@
+Is it possible to build a skill based on another skill by referecing it?
+
+---
+
+Let's build a skill according to the specs giving at `https://agentskills.io/specification`. Particular, take advantage of progressive disclosure in skills and structure the skill definition accordingly.
+
+- The skill should be similar to the existing skill `/issue-analyze` but for PRs. It should at least share the following properties with `/issue-analyze`.
+  - It should be named `pr-analyze`
+  - It should have an analysis file save in a local subdirectory. The subdirtory should be name similary to the one in `/issue-analyze` but with name adjustment for PR, for example name with "pr" instead of "issue". The analysis file should be adjusted as well.
+  - The subdirectory should allows human user to save other files related to the analysis of the PR as well.
+  - The analysis of the PR should be updated should the skill is called on the same PR after its first invocation on the PR.
+  - Questions and answers in the conversation in which the skill is invoked will continue to be used to refine and update the analysis of the PR. 
+- The analysis of the PR should be done by invoking the `/review` built-in command/skill
+
+---
+
+Is it beneficial to have a subagent to invoke `/review` and having it return the result of `/review` to invoking agent in the very beginning of execution of this skill instead of invoking `/review` using the agent?
+
+---
+
+I want the `/review` to be run in the context of the agent that invoked `/pr-analyze`, so the answer is no.
