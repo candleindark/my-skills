@@ -13,6 +13,17 @@
 - **Linked Issues**:
 - **Date of analysis**:
 
+## Companion files
+
+<!--
+Optional. List other files in the PR directory that complement this analysis,
+each with a one-line description. The most common companion is
+`pr-<number>-background.md` — domain/protocol/reference knowledge surfaced
+during the conversation that helps a reader understand the PR but is not
+specific to its changes. Create that file lazily, the first time such
+information arises; if none ever does, omit this section.
+-->
+
 ## Summary of Changes
 
 <!-- What this PR does at a high level. Pull from the PR description and the actual diff. -->

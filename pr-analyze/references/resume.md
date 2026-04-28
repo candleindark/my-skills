@@ -35,6 +35,8 @@ Append a dated entry to the **Session Log** section of `pr-<number>-analysis.md`
 
 Also revise the earlier sections (Summary of Changes, Review Findings, Recommendation, Open Questions) in place if the understanding of the PR has changed — the body of the document should always represent the current best understanding, while the Session Log preserves the chronology.
 
+If `pr-<number>-background.md` exists, treat it as an active companion: read it alongside the analysis, and update or extend it whenever new domain/protocol/reference knowledge surfaces (typically through user Q&A) that helps a reader understand the PR but is not specific to its changes. If it does not yet exist and such information arises in this session, create it. Ensure the analysis file's "Companion files" section reflects the current state.
+
 ## 6. Brief the User
 
 Provide a concise summary covering:

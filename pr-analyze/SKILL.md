@@ -37,6 +37,11 @@ Only load the reference file for the path you are actually taking.
 
 ## 3. Ongoing Updates
 
-Throughout the rest of this conversation, whenever new understanding is gained — through code investigation, running the review, test results, or **dialog with the user** (facts they share, clarifications they request, constraints, decisions, references) — update the analysis file to reflect the current state. The file should always represent the most complete and accurate picture of the PR.
+Throughout the rest of this conversation, whenever new understanding is gained — through code investigation, running the review, test results, or **dialog with the user** (facts they share, clarifications they request, constraints, decisions, references) — update the appropriate file to reflect the current state. Two files should be kept up-to-date:
 
-Any files relevant to the PR can be placed in the PR directory alongside the analysis — including but not limited to test scripts, example data, reproduction cases, diagrams, reference material, and any other supporting material. Both the AI agent and the human user may add files to this directory at any time during the investigation.
+- **`pr-<number>-analysis.md`** — review findings, recommendations, decisions, and anything else specific to *this PR*. Should always represent the most complete and accurate picture of the PR.
+- **`pr-<number>-background.md`** — domain, protocol, and reference knowledge surfaced during the conversation that helps future readers (or future sessions) understand the PR but is not specific to its changes. Examples: how a relevant external system or storage format works, glossary of terms used in the PR thread, protocol-level details that explain why a constraint exists. Create this file lazily on the first occasion such information arises (typically through user Q&A, but also from code exploration or documentation lookups). If no such information ever arises, the file does not need to exist.
+
+Keep the split clean: PR-specific findings go in the analysis file; reusable context goes in the background file. When background information is directly load-bearing for a finding, the analysis file should reference the background file rather than duplicating the explanation. Whenever the analysis file is created or updated, ensure it lists the companion background file (if it exists) in a short "Companion files" section near the top.
+
+Any other files relevant to the PR can also be placed in the PR directory — including but not limited to test scripts, example data, reproduction cases, diagrams, and any other supporting material. Both the AI agent and the human user may add files to this directory at any time during the investigation.

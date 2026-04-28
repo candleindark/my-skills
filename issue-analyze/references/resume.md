@@ -30,6 +30,8 @@ Append a dated entry to the **Session Log** section of `issue-<number>-analysis.
 
 Also revise the earlier sections (Problem Description, Code Investigation, Proposed Fix Approach, Open Questions) in place if the understanding of the issue or fix has changed — the body of the document should always represent the current best understanding, while the Session Log preserves the chronology.
 
+If `issue-<number>-background.md` exists, treat it as an active companion: read it alongside the analysis, and update or extend it whenever new domain/protocol/reference knowledge surfaces (typically through user Q&A) that helps a reader understand the issue but is not specific to its resolution. If it does not yet exist and such information arises in this session, create it. Ensure the analysis file's "Companion files" section reflects the current state.
+
 ## 5. Brief the User
 
 Provide a concise summary covering:

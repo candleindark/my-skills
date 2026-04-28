@@ -10,6 +10,17 @@
 - **State**:
 - **Date of analysis**:
 
+## Companion files
+
+<!--
+Optional. List other files in the issue directory that complement this analysis,
+each with a one-line description. The most common companion is
+`issue-<number>-background.md` — domain/protocol/reference knowledge surfaced
+during the conversation that helps a reader understand the issue but is not
+specific to its resolution. Create that file lazily, the first time such
+information arises; if none ever does, omit this section.
+-->
+
 ## Problem Description
 
 <!-- What the issue reports. Include error output and reproduction steps pulled from the issue body and comments. -->
